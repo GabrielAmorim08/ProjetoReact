@@ -5,7 +5,7 @@ namespace BackEnd.Models
 {
     public class BibliotecaContext : DbContext
     {
-        BibliotecaContext(DbContextOptions<BibliotecaContext> context) : base(context) {
+        public BibliotecaContext(DbContextOptions<BibliotecaContext> context) : base(context) {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
