@@ -1,9 +1,11 @@
-﻿using DTOS.Usuarios;
+﻿
+using BackEnd.DTO;
+using BackEnd.Models.Usuario;
 
 namespace BackEnd.Interfaces.Auth
 {
     public interface IAuth
     {
-        public bool AuthUser(UsuarioDTO usuario);
+        public ResultadoDTO<UsuarioDTO> AuthUser(UsuarioDTO usuario);
     }
 }
